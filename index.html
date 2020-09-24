@@ -22,6 +22,10 @@
 </head>
 <body>
 
+  <!-- Display the map and title with HTML division tags  -->
+  <div id="leaflet-map-csv-johan">EDIT your map title</div>
+  <div id="map"></div>
+  
   <!-- Insert HTML division tag to layout the map -->
   <div id="map"></div>
 
@@ -31,7 +35,7 @@
   // Set up initial map center and zoom level
   var map = L.map('map', {
     center: [41.77, -72.69], // EDIT latitude, longitude to re-center map
-    zoom: 12,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
+    zoom: 10,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
     scrollWheelZoom: false
   });
 
