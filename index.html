@@ -23,6 +23,7 @@
 <body>
 
   <!-- Insert HTML division tag to layout the map -->
+  <div id="My leaflet Maps with CSV">EDIT your map title</div>
   <div id="map"></div>
 
   <!-- Insert Javascript (.js) code to create the map -->
@@ -31,7 +32,7 @@
   // Set up initial map center and zoom level
   var map = L.map('map', {
     center: [41.57, -72.69], // EDIT latitude, longitude to re-center map
-    zoom: 9,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
+    zoom: 12,  // EDIT from 1 to 18 -- decrease to zoom out, increase to zoom in
     scrollWheelZoom: false
   });
 
@@ -44,7 +45,7 @@
   // display Carto basemap tiles with light features and labels
   var light = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
-  }).addTo(map); // EDIT - insert or remove ".addTo(map)" before last semicolon to display by default
+  }); // EDIT - insert or remove ".addTo(map)" before last semicolon to display by default
   controlLayers.addBaseLayer(light, 'Carto Light basemap');
 
   /* Stamen colored terrain basemap tiles with labels */
